@@ -79,3 +79,12 @@ main{
   height: 646px;
   margin: 50px 140px;
 }
+article{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.article__card{
+  display: flex;
+  flex-direction: column;
+}
