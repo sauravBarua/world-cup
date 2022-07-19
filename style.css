@@ -40,5 +40,27 @@ header {
 .header__img{
     width: 551px;
     height: 613px;
-
+}
+.nav__container{
+    width: 312PX;
+    height: 312PX;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav__container a{
+    width: 230px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
