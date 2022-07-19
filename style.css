@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: black;
+    width: 1321px;
+    height: 646px;
+}
+.header__test{
+    color: white;
+}
+.header__button{
+    background-color: #d00000;
+    color: white;
+}
