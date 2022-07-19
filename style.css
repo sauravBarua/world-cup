@@ -10,20 +10,35 @@ header {
   width: 1321px;
   height: 646px;
   margin: 50px 140px;
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header__test {
   color: white;
-  width: 50%;
+  width: 100%;
+  width: 531px;
+  height: 424px;
+}
+.header__test h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+.header__test p{
+    font-size: 20px;
 }
 .header__button {
   background-color: #d00000;
   color: white;
+  padding: 16px 25px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  font-weight: bold;
 }
-          <img class="header__img" src="assets/Banner Image.png" alt="player" />
 .header__img{
-    width: 50%;
+    width: 551px;
+    height: 613px;
+
 }
