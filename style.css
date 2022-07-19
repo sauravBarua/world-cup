@@ -1,7 +1,9 @@
 * {
   margin: 0;
 }
-
+/* --------
+Header styles
+------------- */
 header {
     width: 100%;
 }
@@ -41,6 +43,9 @@ header {
     width: 551px;
     height: 613px;
 }
+/*----------------
+ Nav styles in main 
+ -------------------*/
 .nav__container{
     width: 312PX;
     height: 312PX;
@@ -63,4 +68,14 @@ header {
     border-radius: 5px;
     text-decoration: none;
     color: black;
+    font-weight: bold;
+}
+/* ------------------------
+styles in main 
+---------------------------*/
+main{
+  display: flex;
+  width: 1321px;
+  height: 646px;
+  margin: 50px 140px;
 }
