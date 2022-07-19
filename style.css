@@ -1,15 +1,29 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-header{
-    background-color: black;
-    width: 1321px;
-    height: 646px;
+
+header {
+    width: 100%;
 }
-.header__test{
-    color: white;
+.header__container {
+  background-color: black;
+  width: 1321px;
+  height: 646px;
+  margin: 50px 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header__button{
-    background-color: #d00000;
-    color: white;
+.header__test {
+  color: white;
+  width: 50%;
+}
+.header__button {
+  background-color: #d00000;
+  color: white;
+}
+          <img class="header__img" src="assets/Banner Image.png" alt="player" />
+.header__img{
+    width: 50%;
 }
