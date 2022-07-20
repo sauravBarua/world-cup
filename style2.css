@@ -2,25 +2,26 @@
   .header__container {
     width: 100%;
     background-color: black;
-    height: 472px;
+    height: 492px;
     margin: 50px auto;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .header__text {
     color: white;
     width: 258px;
-    height: 178px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .header__text h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
   }
   .header__text p {
@@ -30,8 +31,8 @@
     text-overflow: ellipsis;
   }
   .header__img {
-    margin-top: 25px;
-    width: 232px;
+    margin-top: 10px;
+    width: 240px;
     height: 245px;
   }
   .header__button {
