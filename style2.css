@@ -1,0 +1,47 @@
+@media screen and (min-width: 640px) {
+  .header__container {
+    width: 100%;
+    background-color: black;
+    height: 472px;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__text {
+    color: white;
+    width: 258px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__text h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .header__text p {
+    font-size: 15px;
+    margin: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header__img {
+    margin-top: 25px;
+    width: 232px;
+    height: 245px;
+  }
+  .header__button {
+    background-color: #d00000;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
