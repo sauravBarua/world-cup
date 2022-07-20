@@ -165,12 +165,24 @@ Responsive css tablet
 ------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     /* height: 646px; */
     margin: 50px auto 50px;
   }
-
+  .nav__container {
+    width: 100%;
+    height: 312px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 50px;
+  }
   .header__container {
     width: 100%;
     background-color: black;
@@ -180,7 +192,7 @@ Responsive css tablet
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 50px;
+    margin: 50px 50px 10px;
   }
   .header__text {
     color: white;
@@ -201,13 +213,14 @@ Responsive css tablet
     height: 613px;
   }
   .nav__container {
-    margin: 50px auto;
+    margin: 0px 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
   }
+  
   .nav__container a {
     width: 230px;
     height: 64px;
@@ -219,17 +232,28 @@ Responsive css tablet
     text-decoration: none;
     font-weight: 700;
   }
+  .nav__match,
+.nav__group {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.nav__blog {
+  background-color: #d00000;
+  color: white;
+}
   section {
+    margin: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 50px 50px;
+    margin: 10px 50px;
 
   }
   .section__card {
     display: flex;
     flex-direction: column;
-    width: 357px;
-    height: 414px;
+    width: 430px;
+    height: 514px;
     margin-bottom: 20px;
     margin-left: 10px;
     border: 1px solid rgb(241, 236, 236);
