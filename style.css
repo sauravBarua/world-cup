@@ -171,7 +171,7 @@ footer > hr {
 /* -----------------------
 Responsive css tablet 
 ------------------------*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header__container {
     width: 100%;
     background-color: black;
@@ -187,6 +187,8 @@ Responsive css tablet
     color: white;
     width: 316px;
     height: 276px;
+    margin-bottom: 170px;
+    margin-right: 25px;
   }
   .header__text h1 {
     font-size: 60px;
@@ -254,7 +256,8 @@ Responsive css tablet
     margin: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10px 50px;
+    justify-items: center;
+    margin: 10px;
   }
   .section__card {
     display: flex;
@@ -266,12 +269,44 @@ Responsive css tablet
     border: 1px solid rgb(241, 236, 236);
     border-radius: 10px;
   }
+  .section__card > p {
+    margin: 15px 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .transfer {
+    width: 90px;
+    height: 40px;
+    /* padding: 5px; */
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .section__icon {
+    display: flex;
+    align-items: center;
+  }
+  .section__icon > img {
+    margin-left: 10px;
+  }
   footer {
     width: 100%;
     height: 444px;
     background-color: black;
     color: white;
     margin: 10px 50px;
+  }
+  footer > h1 {
+    font-size: 48px;
+    text-align: center;
+    padding: 80px;
   }
   .footer__info {
     margin-top: 70px;
@@ -299,6 +334,179 @@ Responsive css tablet
     font-weight: bold;
   }
 }
+
 /* -----------------------
 Responsive css Mobiles
 ------------------------*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header__container {
+    width: 100%;
+    background-color: black;
+    height: 492px;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header__text {
+    color: white;
+    width: 258px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__text h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .header__text p {
+    font-size: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header__img {
+    margin-top: 10px;
+    width: 240px;
+    height: 245px;
+  }
+  .header__button {
+    background-color: #d00000;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 646px; */
+    margin: 50px auto 50px;
+  }
+  .nav__container {
+    width: 100%;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .nav__container a {
+    width: 230px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px;
+  }
+  .nav__match {
+    padding: 10px;
+  }
+  .nav__match,
+  .nav__group {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  .nav__blog {
+    background-color: #d00000;
+    color: white;
+  }
+  section {
+    margin: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin: 10px;
+  }
+  .section__card {
+    display: flex;
+    flex-direction: column;
+    /* width: 430px; */
+    width: 100%;
+    height: 800px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 1px solid rgb(203, 198, 198);
+    border-radius: 10px;
+  }
+  .section__card > p {
+    margin: 15px 10px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .transfer {
+    width: 140px;
+    height: 70px;
+    /* padding: 5px; */
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .section__icon {
+    display: flex;
+    align-items: center;
+  }
+  .section__icon > img {
+    margin-left: 15px;
+    width: 60px;
+  }
+  .section__icon > span {
+    font-size: 36px;
+  }
+  .view__all {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    height: 444px;
+    background-color: black;
+    color: white;
+  }
+  footer > h1 {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 60px;
+  }
+  footer > hr {
+    border: 1px solid rgb(72, 69, 69);
+    width: 70%;
+    margin: auto;
+  }
+  .footer__info {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(160, 154, 154);
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__info > span {
+    margin-bottom: 10px;
+  }
+}
