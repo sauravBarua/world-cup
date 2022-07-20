@@ -160,10 +160,13 @@ footer > hr {
 .footer__info > span {
   margin-left: 36px;
 }
+.view__all{
+  display: none;
+}
 /* -----------------------
 Responsive css tablet 
 ------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
   main {
     width: 100%;
     display: flex;
@@ -267,12 +270,12 @@ Responsive css tablet
     justify-content: center;
     align-items: center;
   }
-  .view__all{
+  .view__all {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .view__all>button {
+  .view__all > button {
     background-color: #d00000;
     color: white;
     padding: 16px 25px;
@@ -285,5 +288,43 @@ Responsive css tablet
 /* -----------------------
 Responsive css Mobiles
 ------------------------*/
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (device-width: 360px) and (device-height: 640px) {
+
+  .header__container {
+    background-color: black;
+    height: 646px;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  /* .header__text {
+    color: white;
+    width: 531px;
+    height: 424px;
+  }
+  .header__text h1 {
+    font-size: 90px;
+    font-weight: 700;
+  }
+  .header__text p {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .header__button {
+    background-color: #d00000;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .header__img {
+    margin-top: 10px;
+    width: 551px;
+    height: 613px;
+  } */
 }
