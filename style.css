@@ -7,16 +7,7 @@ Header styles
 header {
   width: 100%;
 }
-.header__container {
-  background-color: black;
-  width: 1321px;
-  height: 646px;
-  margin: 50px auto;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .header__test {
   color: white;
   width: 100%;
@@ -155,6 +146,48 @@ footer > hr {
   color: rgb(160, 154, 154);
   font-size: 22px;
 }
-.footer__info>span{
+.footer__info > span {
   margin-left: 36px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    /* height: 646px; */
+    margin: 50px auto 50px;
+  }
+  .header__container {
+    background-color: black;
+    height: 646px;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .nav__container a {
+    width: 200px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px;
+  }
 }
