@@ -1,29 +1,44 @@
-@media screen and (min-width: 800px) {
+
+
+/* -----------------------
+Responsive css Mobiles
+------------------------*/
+@media (min-width: 320px) and (max-width: 480px) {
   .header__container {
     width: 100%;
     background-color: black;
-    height: 646px;
+    height: 492px;
     margin: 50px auto;
     border-radius: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 50px 10px;
+    text-align: center;
   }
   .header__text {
     color: white;
-    width: 316px;
-    height: 276px;
-    margin-bottom: 170px;
-    margin-right: 25px;
+    width: 258px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .header__text h1 {
-    font-size: 60px;
+    font-size: 32px;
     font-weight: 700;
   }
   .header__text p {
     font-size: 15px;
-    margin: 7px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header__img {
+    margin-top: 10px;
+    width: 240px;
+    height: 245px;
   }
   .header__button {
     background-color: #d00000;
@@ -34,11 +49,6 @@
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
-  }
-  .header__img {
-    margin-top: 10px;
-    width: 551px;
-    height: 613px;
   }
   main {
     width: 100%;
@@ -52,11 +62,10 @@
     background-color: white;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    margin: 0px 50px;
   }
   .nav__container a {
     width: 230px;
@@ -65,9 +74,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 700;
+    margin: 10px;
+  }
+  .nav__match {
+    padding: 10px;
   }
   .nav__match,
   .nav__group {
@@ -82,28 +95,29 @@
   section {
     margin: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     margin: 10px;
   }
   .section__card {
     display: flex;
     flex-direction: column;
-    width: 430px;
-    height: 514px;
+    /* width: 430px; */
+    width: 100%;
+    height: 800px;
     margin-bottom: 20px;
     margin-left: 10px;
-    border: 1px solid rgb(241, 236, 236);
+    border: 1px solid rgb(203, 198, 198);
     border-radius: 10px;
   }
   .section__card > p {
     margin: 15px 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
   }
   .transfer {
-    width: 90px;
-    height: 40px;
+    width: 140px;
+    height: 70px;
     /* padding: 5px; */
     text-decoration: none;
     font-weight: bold;
@@ -121,46 +135,43 @@
     align-items: center;
   }
   .section__icon > img {
-    margin-left: 10px;
+    margin-left: 15px;
+    width: 60px;
+  }
+  .section__icon > span {
+    font-size: 36px;
+  }
+  .view__all {
+    display: none;
   }
   footer {
     width: 100%;
     height: 444px;
     background-color: black;
     color: white;
-    margin: 10px 50px;
   }
   footer > h1 {
     font-size: 48px;
     text-align: center;
-    padding: 80px;
+    padding-top: 60px;
+  }
+  footer > hr {
+    border: 1px solid rgb(72, 69, 69);
+    width: 70%;
+    margin: auto;
   }
   .footer__info {
-    margin-top: 70px;
+    margin-top: 40px;
     text-align: center;
     font-weight: bold;
     color: rgb(160, 154, 154);
-    font-size: 30px;
+    font-size: 22px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .view__all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .footer__info > span {
+    margin-bottom: 10px;
   }
-  .view__all > button {
-    background-color: #d00000;
-    color: white;
-    padding: 16px 25px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-
-
 }
