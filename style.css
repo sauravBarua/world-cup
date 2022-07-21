@@ -43,6 +43,10 @@ Header styles
   font-size: 16px;
   font-weight: bold;
 }
+.header__button:hover{
+  background-color: orange;
+  cursor: pointer;
+}
 .header__img {
   margin-top: 10px;
   width: 551px;
@@ -166,6 +170,17 @@ footer > hr {
 .view__all {
   display: none;
 } 
+.social__icon>img{
+  width: 30px;
+  height: 25px;
+  margin-left: 20px;
+}
+.social__icon{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* -----------------------
 Responsive css tablet 
 ------------------------*/

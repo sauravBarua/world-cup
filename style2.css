@@ -156,6 +156,18 @@ footer > hr {
 .view__all {
   display: none;
 } 
+.social__icon>img{
+  width: 30px;
+  height: 25px;
+  margin-left: 20px;
+}
+.social__icon{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .header__container {
     width: 100%;
@@ -192,6 +204,10 @@ footer > hr {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
+  }
+  .header__button:hover{
+    background-color: orange;
+    cursor: pointer;
   }
   .header__img {
     margin-top: 10px;
