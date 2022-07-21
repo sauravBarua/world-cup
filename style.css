@@ -169,7 +169,7 @@ footer > hr {
 /* -----------------------
 Responsive css tablet 
 ------------------------*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .header__container {
     width: 100%;
     background-color: black;
@@ -334,7 +334,7 @@ Responsive css tablet
 /* -----------------------
 Responsive css Mobiles
 ------------------------*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .header__container {
     width: 100%;
     background-color: black;
@@ -423,7 +423,8 @@ Responsive css Mobiles
     color: white;
   }
   section {
-    margin: 100%;
+    /* margin: 100%; */
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -432,8 +433,8 @@ Responsive css Mobiles
   .section__card {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 800px;
+    width: 475px;
+    height: 450px;
     margin-bottom: 20px;
     margin-left: 10px;
     border: 1px solid rgb(203, 198, 198);
@@ -446,7 +447,7 @@ Responsive css Mobiles
   }
   .transfer {
     width: 140px;
-    height: 70px;
+    height: 90px;
     text-decoration: none;
     font-weight: bold;
     color: grey;
@@ -464,10 +465,10 @@ Responsive css Mobiles
   }
   .section__icon > img {
     margin-left: 15px;
-    width: 60px;
+    width: 30px;
   }
   .section__icon > span {
-    font-size: 36px;
+    font-size: 30px;
   }
   .view__all {
     display: none;
@@ -481,15 +482,15 @@ Responsive css Mobiles
   footer > h1 {
     font-size: 48px;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 50px;
   }
   footer > hr {
     border: 1px solid rgb(72, 69, 69);
     width: 70%;
-    margin: auto;
+    margin-top: 10px;
   }
   .footer__info {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     font-weight: bold;
     color: rgb(160, 154, 154);
@@ -502,9 +503,6 @@ Responsive css Mobiles
   .footer__info > span {
     margin-bottom: 10px;
   }
-  .view__all {
-    display: none;
-  } 
 }
 
 
